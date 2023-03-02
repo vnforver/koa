@@ -1,3 +1,18 @@
+wx.cloud.callContainer({
+  "config": {
+    "env": "prod-9gp0r7oq5892846c"
+  },
+  "path": "/api/count",
+  "header": {
+    "X-WX-SERVICE": "koa-rztb"
+  },
+  "method": "POST",
+  "data": {
+    "action": "inc"
+  }
+})
+
+
 const Koa = require("koa");
 const Router = require("koa-router");
 const logger = require("koa-logger");
@@ -65,3 +80,4 @@ async function bootstrap() {
   });
 }
 bootstrap();
+
